@@ -9,17 +9,70 @@
     <title>Title</title>
 
     <!-- Extra links -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 </head>
-<body>
+<body class="container-fluid">
+<main class="choice computer">
+    <p>First pick your poison,<br>then click on the computer to generate the result.</p>
+    <section class="row w-100 d-flex choice player">
+        <div class="col">
+            <ul>
+                <li>
+                    <button id="scissors" class="pchoice">Scissors</button>
+                </li>
+                <li>
+                    <button id="paper" class="pchoice">Paper</button>
+                </li>
+                <li>
+                    <button id="rock" class="pchoice">Rock</button>
+                </li>
+                <li>
+                    <button id="lizard" class="pchoice">Lizard</button>
+                </li>
+                <li>
+                    <button id="spock" class="pchoice">Spock</button>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="row w-100 d-flex result">
+
+        <div class="col-12 col-md-4">
+            <section id="player-choice">Player Choice</section>
+        </div>
+        <div class="col-12 col-md-4">
+            <section id="win-lose">RESULT</section>
+        </div>
+        <div class="col-12 col-md-4">
+            <section id="comp-choice">Comp choice</section>
+        </div>
+
+    </section>
+
+    <section class="row w-100 d-flex">
+        <div class="col">
+            <button id="comp-rand">computer</button>
+        </div>
+    </section>
+
+    <section class="row w-100 d-flex button-reset">
+        <div class="col">
+            <button id="reset">Play again</button>
+        </div>
+    </section>
 
 
+</main>
+</body>
 <!-- Optional JavaScript -->
+<script src="js/rockpls.js"></script>
+
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
